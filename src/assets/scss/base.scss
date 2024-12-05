@@ -1,0 +1,289 @@
+#wrap {
+  position: relative;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.row-list .row-item + .row-item {
+  margin-top: 15px;
+}
+
+.row-list .row-item .row-title {
+  font-weight: 400;
+  font-size: 13px;
+  color: #7a7a7a;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button,
+input,
+select,
+textarea {
+  border-radius: 0;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.input {
+  position: relative;
+}
+
+.input input[type="text"].valid-error,
+.input input[type="password"].valid-error,
+.input input[type="number"].valid-error,
+.input input[type="email"].valid-error,
+.input input[type="tel"].valid-error {
+  border-color: #e36f20;
+}
+
+.input input[type="text"],
+.input input[type="password"],
+.input input[type="number"],
+.input input[type="email"],
+.input input[type="tel"] {
+  height: 47px;
+  display: block;
+  padding: 0 10px;
+  width: 100%;
+  border: 1px solid #eee;
+  background: #ffffff;
+  color: #474747;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.input input[type="text"].valid-error ~ .valid-msg,
+.input input[type="password"].valid-error ~ .valid-msg,
+.input input[type="number"].valid-error ~ .valid-msg,
+.input input[type="email"].valid-error ~ .valid-msg,
+.input input[type="tel"].valid-error ~ .valid-msg {
+  display: block;
+}
+
+.input.search input[type="text"],
+.input.search input[type="password"],
+.input.search input[type="number"],
+.input.search input[type="email"],
+.input.search input[type="tel"] {
+  padding: 0 10px 0 30px;
+  background: url("../icons/ico-search.png") #ffffff 8px 50% no-repeat;
+  background-size: 12px auto;
+}
+
+.input.bg input[type="text"],
+.input.bg input[type="password"],
+.input.bg input[type="number"],
+.input.bg input[type="email"],
+.input.bg input[type="tel"] {
+  background-color: #f9f9f9;
+}
+
+.input.certify .count {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 10px;
+  height: 47px;
+  display: inline-flex;
+  align-items: center;
+  color: #7a7a7a;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.input .valid-msg,
+.select-box .valid-msg,
+.textarea .valid-msg {
+  display: none;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #e36f20;
+}
+
+.login {
+  position: relative;
+  padding-bottom: 55px;
+}
+
+.login .btn-login {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.login .login-menu-list {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .login-menu-list li {
+  position: relative;
+  color: #a9a9a9;
+  font-size: 12px;
+}
+
+.login .login-menu-list li + li {
+  margin-left: 10px;
+  padding-left: 11px;
+}
+
+.login .login-menu-list li + li:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 12px;
+  top: 50%;
+  left: 0;
+  margin-top: 1px;
+  transform: translateY(-50%);
+  background: #a9a9a9;
+}
+
+.login .social-login {
+  margin-top: 80px;
+  padding-bottom: 20px;
+}
+
+.login .social-login .title {
+  font-weight: 500;
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.login .social-login .title span {
+  background: #ffffff;
+  position: relative;
+  padding: 0 30px;
+  z-index: 1;
+}
+
+.login .social-login .title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #eee;
+  transform: translateY(-50%);
+}
+
+.login .social-login .social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .social-login .social-link a {
+  width: 51px;
+  height: 51px;
+}
+
+.login .social-login .social-link a img {
+  width: 100%;
+}
+
+.login .social-login .social-link a + a {
+  margin-left: 24px;
+}
+
+.login .login-menu-list li {
+  position: relative;
+  color: #a9a9a9;
+  font-size: 12px;
+}
+
+.login .btn-login {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+
+[class^="btn-"] {
+  vertical-align: middle;
+}
+
+.btn-default,
+.btn-send,
+.btn-login,
+.btn-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  height: 45px;
+  background: #c5c5c5;
+}
+
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #c3c3c3;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #c3c3c3;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #c3c3c3;
+}
+
+input[type="text"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder,
+input[type="email"]::-ms-input-placeholder,
+input[type="tel"]::-ms-input-placeholder,
+input[type="number"]::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #c3c3c3;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder,
+textarea::placeholder {
+  color: #c3c3c3;
+}
